@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>PAX Sivir Skin Hunt</title>
+
+        <!--<script
+              src="https://code.jquery.com/jquery-3.2.1.min.js"
+              integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+              crossorigin="anonymous"></script>-->
+        <script type="text/javascript" src="{% static "js/jquery-3.2.1.min.js" %}"></script>
+
+        <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
+    </head>
+
+    <body>
+        <div id="frame">
+            <div id="screen">
+                    <p id="output"></p>
+                    <form id="input" method="post">{% csrf_token %}
+                        $:
+                        <input type="text" id="input-text" autocomplete="off"><br>
+                        <input type="submit" id="submit-button">
+                    </form>
+            </div>
+        </div>
+    </body>
+
+    <script src="{% static "js/main.js" %}"></script>
+</html>
