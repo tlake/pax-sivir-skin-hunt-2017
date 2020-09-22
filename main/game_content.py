@@ -833,7 +833,7 @@ exit = AtticObject(
         "Here, the exit leads down into a room that is exactly the same as this one, like some kind of funky dream. "
     ),
     use_text=(
-        "You go down through the door and are greeted with a situation exactly the one you were in before you decided to use the door."
+        "You go down through the door and are greeted with a situation exactly the same as the one you were in before you decided to use the door."
     ),
 )
 
@@ -890,7 +890,7 @@ VIEWS = {
     ),
     "south": AtticView(
         look_text=(
-            "The south side of the attic contains mostly the kinds of things you would put in a boxed labelled 'misc' in order to forget about. "
+            "The south side of the attic contains mostly the kinds of things you would put in a container labelled 'misc' in order to forget about. "
             "A few cardboard boxes are stacked up off to one side; on the other side rests a katamari, acting as a catch-all for items without a proper storage location."
         ),
         objects={
